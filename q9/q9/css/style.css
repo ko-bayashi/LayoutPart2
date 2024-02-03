@@ -133,6 +133,7 @@
   border-right: none;
   background: #ffffff;
   transition: 0.5s;
+  box-sizing: border-box;
 }
 
 .contents:last-child {
