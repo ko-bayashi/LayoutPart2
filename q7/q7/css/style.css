@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.content {
+  width: 500px;
+  border: solid 5px #8f5a0a;
+  background: #fad296;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20px;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-top: 20px solid #8f5a0a;;
+  bottom: -42px;
+  left: 20px;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-top: 20px solid #fad296;
+  bottom: -35px;
+  left: 20px;
+}

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.button {
+  border-radius: 10px;
+  line-height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.flex:not(:last-child) .button:not(:last-child) {
+  color: #fff;
+}
+
+.red {
+  background: #fd0f0fd9;
+}
+
+.blue {
+  background: #170ffdd9;
+}
+
+.green {
+  background: #0ffd0fd9;
+  color: #000;
+}
+
+.red--shadow {
+  box-shadow: 0px 5px 0px rgba(63, 5, 5, 0.851);
+  background: #fd0f0fd9;
+}
+
+.blue--shadow {
+  box-shadow: 0px 5px 0px rgba(5, 13, 63, 0.851);
+  background: #170ffdd9;
+}
+.green--shadow {
+  box-shadow: 0px 5px 0px rgba(5, 63, 5, 0.851);
+  background: #0ffd0fd9;
+  color: #000;
+}
+
+.click:active {
+  box-shadow: none;
+  transform: translateY(5px)
+}
+
+.double {
+  color: #67c5ff;
+  border: 4px double #67c5ff;
+}
+
+.dotted {
+  color: #67c5ff;
+  border: 4px dotted #75caff;
+}
+
+.dashed {
+  color: #0079a5f8;
+  border: 4px dashed #67c5ff;
+  background: #d0edfff8;
+}
+
+.double:hover {
+  background: #fffbef;
+  transition: 0.5s;
+}
+
+.dotted:hover {
+  border: 4px dashed #75caff;;
+}
+
+.dashed:hover {
+  color: #67c5ff;
+  background: #ffffff;
+  transition: 0.5s;
+}
